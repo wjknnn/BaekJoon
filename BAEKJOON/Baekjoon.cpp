@@ -119,3 +119,104 @@ int main() {
 	printf("%d\n%d\n%d\n%d", il, sib, back, num1 * num2);
 	return 0;
 }*/
+
+//조건문
+/*
+#include<stdio.h> // 1330   : 두 수 비교하기
+
+int main() {
+	int A, B;
+	scanf("%d %d", &A, &B);
+	A > B ? puts(">") : A < B ? puts("<") : puts("==");
+	return 0;
+}
+
+#include<stdio.h> // 9498   : 시험 성적
+
+int main() {
+	int A;
+	scanf("%d", &A);
+	if (A <= 100 && A >= 90) printf("A");
+	else if (A >= 80 && A < 90) printf("B");
+	else if (A >= 70 && A < 80) printf("C");
+	else if (A >= 60 && A < 70) printf("D");
+	else printf("Fhttps://www.acmicpc.net/submit/2753");
+	return 0;
+}
+
+#include<stdio.h> // 2753   : 윤년
+
+int main() {
+	int year;
+	scanf("%d", &year);
+	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+		printf("1");
+	}
+	else printf("0");
+	return 0;
+}
+
+#include<stdio.h> // 14681  : 사분면 고르기
+
+int main() {
+	int x, y;
+	scanf("%d %d", &x, &y);
+	if (x > 0 && y > 0) printf("1");
+	else if (x < 0 && y>0) printf("2");
+	else if (x < 0 && y < 0) printf("3");
+	else if (x > 0 && y < 0) printf("4");
+	return 0;
+}
+
+#include<stdio.h> // 2884   : 알람 시계
+
+int main() {
+	int h, m;
+	scanf("%d %d", &h, &m);
+	if (m - 45 < 0) {
+		m = 60 + (m - 45);
+		if (h - 1 < 0) h = 23;
+		else h = h - 1;
+	}
+	else m = m - 45;
+	printf("%d %d", h, m);
+	return 0;
+}
+
+#include<stdio.h> // 2525   : 오븐 시계
+
+int main() {
+	int h, m, t;
+	scanf("%d %d", &h, &m);
+	scanf("%d", &t);
+	m += t;
+	h = h + m / 60;
+	if (m >= 60) {
+		m %= 60;
+		if (h >= 24) {
+			h -= 24;
+		}
+	}
+	printf("%d %d", h, m);
+	return 0;
+}
+
+#include<stdio.h> // 2480   : 주사위 세개
+
+int main() {
+	int n1, n2, n3;
+	scanf("%d %d %d", &n1, &n2, &n3);
+	if (n1 == n2 && n2 == n3) printf("%d", 10000 + n1 * 1000);
+	else if (n1 == n2 && n1 != n3) printf("%d", 1000 + n1 * 100);
+	else if (n2 == n3 && n2 != n1) printf("%d", 1000 + n2 * 100);
+	else if (n1 == n3 && n1 != n2) printf("%d", 1000 + n3 * 100);
+	else {
+		if (n1 > n2 && n1 > n3) printf("%d", n1 * 100);
+		else if (n2 > n1 && n2 > n3) printf("%d", n2 * 100);
+		else if (n3 > n1 && n3 > n2) printf("%d", n3 * 100);
+	}
+	return 0;
+}*/
+
+//반복문
+/**/
