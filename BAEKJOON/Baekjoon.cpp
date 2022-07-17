@@ -219,4 +219,162 @@ int main() {
 }*/
 
 //반복문
-/**/
+/*
+#include<stdio.h> // 2739   : 구구단
+
+int main() {
+	int i, n;
+	scanf("%d", &n);
+	for (i = 1; i <= 9; i++) {
+		printf("%d * %d = %d\n", n, i, n * i);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 10950  : A+B - 3
+
+int main() {
+	int n, i, o, t;
+	scanf("%d", &n);
+	for (i = 0; i < n; i++) {
+		scanf("%d %d", &o, &t);
+		printf("%d\n", o + t);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 8393   : 합
+
+int main() {
+	int n, i, t = 0;
+	scanf("%d", &n);
+	for (int i = 1; i <= n; i++) {
+		t += i;
+	}
+	printf("%d", t);
+	return 0;
+}
+
+#include<stdio.h> // 15552  : 빠른 A+B
+
+int main() {
+	int n, i, o, t;
+	scanf("%d", &n);
+	for (i = 0; i < n; i++) {
+		scanf("%d %d", &o, &t);
+		printf("%d\n", o + t);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2741   : N 찍기
+
+int main() {
+	int N, i;
+	scanf("%d", &N);
+	for (int i = 1; i <= N; i++) {
+		printf("%d\n", i);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2742   : 기찍 N
+
+int main() {
+	int N, i;
+	scanf("%d", &N);
+	for (int i = N; i > 0; i--) {
+		printf("%d\n", i);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 11021  : A+B - 7
+
+int main() {
+	int n, i, o, t;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		scanf("%d %d", &o, &t);
+		printf("Case #%d: %d\n", i, o + t);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 11022  : A+B - 8
+
+int main() {
+	int n, i, o, t;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		scanf("%d %d", &o, &t);
+		printf("Case #%d: %d + %d = %d\n", i, o, t, o + t);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2438   : 별 찍기 - 1
+
+int main() {
+	int n, i, j;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		for (j = 1; j <= i; j++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2439   : 별 찍기 - 2
+
+int main() {
+	int n, i, j;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		for (j = n; j > i; j--) {
+			printf(" ");
+		}
+		for (j = 1; j <= i; j++) {
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 10871  : X보다 작은 수
+
+int main() {
+	int N, X, n;
+	scanf("%d %d", &N, &X);
+	while (N--) {
+		scanf("%d", &n);
+		if (n < X) printf("%d ", n);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 10952  : A+B - 5
+
+int main() {
+	int A, B;
+	while (1) {
+		scanf("%d %d", &A, &B);
+		if (!A && !B) return 0;
+		printf("%d\n", A + B);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 10951  : A+B - 4
+
+int main() {
+	int A, B;
+	while (1) {
+		if (scanf("%d %d", &A, &B) == -1) return 0;
+		printf("%d\n", A + B);
+	}
+	return 0;
+}*/
