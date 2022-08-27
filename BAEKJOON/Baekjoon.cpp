@@ -1,3 +1,138 @@
+//º°Âï±â
+/*
+#include<stdio.h> // 2440   : º° Âï±â - 3
+
+int main() {
+	int i, j, n;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		for (j = i; j <= n; j++) printf("*");
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2441   : º° Âï±â - 4
+
+int main() {
+	int i, j, n;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		for (j = 1; j < i; j++) printf(" ");
+		for (j = i; j <= n; j++) printf("*");
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2442   : º° Âï±â - 5
+
+int main() {
+	int i, j, n;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		for (j = n; j > i; j--) printf(" ");
+		for (j = 1; j <= i; j++) printf("*");
+		for (j = 1; j <= i - 1; j++) printf("*");
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2443   : º° Âï±â - 6
+
+int main() {
+	int i, j, n;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		for (j = 1; j < i; j++) printf(" ");
+		for (j = n; j >= i; j--) printf("*");
+		for (j = n-1; j >= i; j--) printf("*");
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2444   : º° Âï±â - 7
+
+int main() {
+	int i, j, n;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		for (j = n; j > i; j--) printf(" ");
+		for (j = 1; j <= i; j++) printf("*");
+		for (j = 1; j <= i - 1; j++) printf("*");
+		printf("\n");
+	}
+	for (i = 1; i <= n-1; i++) {
+		for (j = 1; j <= i; j++) printf(" ");
+		for (j = n-1; j >= i; j--) printf("*");
+		for (j = n-2; j >= i; j--) printf("*");
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2445   : º° Âï±â - 8
+
+int main() {
+	int i, j, n;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		for (j = 1; j <= i; j++) printf("*");
+		for (j = 1; j <= (n - i) * 2; j++) printf(" ");
+		for (j = 1; j <= i; j++) printf("*");
+		printf("\n");
+	}
+	for (i = 1; i <= n; i++) {
+		for (j = n - i; j >= 1; j--) printf("*");
+		for (j = 1; j <= i * 2; j++) printf(" ");
+		for (j = n - i; j >= 1; j--) printf("*");
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2446   : º° Âï±â - 9
+
+int main() {
+	int i, j, n;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++) {
+		for (j = 1; j < i; j++) printf(" ");
+		for (j = n; j >= i; j--) printf("*");
+		for (j = n - 1; j >= i; j--) printf("*");
+		printf("\n");
+	}
+	for (i = 1; i < n; i++) {
+		for (j = n; j > i + 1; j--) printf(" ");
+		for (j = 2; j <= i + 2; j++) printf("*");
+		for (j = 1; j <= i; j++) printf("*");
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2447   : º° Âï±â - 10
+
+void Star(int N, int i, int j) {
+	if ((i / N) % 3 == 1 && (j / N) % 3 == 1) printf(" ");
+	else {
+		if (N / 3 == 0) printf("*");
+		else Star(N / 3, i, j);
+	}
+}
+
+int main() {
+	int N, i, j;
+	scanf("%d", &N);
+	for (i = 0; i < N; i++) {
+		for (j = 0; j < N; j++) Star(N, i, j);
+		printf("\n");
+	}
+	return 0;
+}*/
+
 //ÀÔÃâ·Â°ú »çÄ¢¿¬»ê
 /*
 #include<stdio.h> // 2557   : Hello World
