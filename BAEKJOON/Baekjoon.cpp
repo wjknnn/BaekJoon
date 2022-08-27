@@ -377,4 +377,83 @@ int main() {
 		printf("%d\n", A + B);
 	}
 	return 0;
+}
+
+#include<stdio.h> // 1110   : 더하기 사이클
+
+int main() {
+	int N, n1, n2, tmp, count = 0;
+	scanf("%d", &N);
+	n1 = N / 10;
+	n2 = N % 10;
+	while (1) {
+		tmp = n2;
+		n2 = (n1 + n2) % 10;
+		n1 = tmp;
+		count++;
+		if (N == n1 * 10 + n2) {
+			printf("%d", count);
+			break;
+		}
+	}
+	return 0;
+}*/
+
+//1차원 배열
+/*
+#include<stdio.h> // 10818  : 최소, 최대
+
+int arr[1000000] = { 0 };
+
+int main() {
+	int N, big = -1000000, small = 1000000;
+	scanf("%d", &N);
+	for (int i = 0; i < N; i++) {
+		scanf("%d", &arr[i]);
+		if (big < arr[i]) big = arr[i];
+		if (small > arr[i]) small = arr[i];
+	}
+	printf("%d %d", small, big);
+	return 0;
+}
+
+#include<stdio.h> // 2562   : 최댓값
+
+int main() {
+	int n[9] = { 0 }, big = 0, bindex = 0;
+	for (int i = 0; i < 9; i++) {
+		scanf("%d", &n[i]);
+		if (big < n[i]) {
+			big = n[i];
+			bindex = i;
+		}
+	}
+	printf("%d\n%d", big, bindex + 1);
+	return 0;
+}
+
+#include<stdio.h> // 3052   : 나머지
+
+int main() {
+	int n[10] = { 0 }, count = 0, num, Ccount = 0, zero = 1;
+	for (int i = 0; i < 10; i++) {
+		Ccount = 0;
+		scanf("%d", &num);
+		num %= 42;
+		for (int j = 0; j < 10; j++) {
+			if (num == 0) {
+				if (zero == 1) {
+					zero = 0;
+					break;
+				}
+			}
+			if (num == n[j]) Ccount++;
+		}
+		if (Ccount == 0) {
+			n[count] = num;
+			count++;
+		}
+	}
+	printf("%d", count);
+	return 0;
 }*/
