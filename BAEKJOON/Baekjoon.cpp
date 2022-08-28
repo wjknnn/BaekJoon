@@ -591,4 +591,79 @@ int main() {
 	}
 	printf("%d", count);
 	return 0;
+}
+
+#include<stdio.h> // 1546   : 평균
+
+int main() {
+	int n[1000] = { 0 }, N, i, m = 0;
+	double avg = 0;
+	scanf("%d", &N);
+	for (i = 0; i < N; i++) {
+		scanf("%d", &n[i]);
+		if (n[i] > m) m = n[i];
+	}
+	for (i = 0; i < N; i++) {
+		avg +=  (double) n[i] / m * 100;
+	}
+	avg /= N;
+	printf("%lf", avg);
+	return 0;
+}
+
+#include<stdio.h> // 8958   : OX퀴즈
+
+int main() {
+	int n, Ocheck = 1, count, i, j;
+	char ox[100] = { 0 };
+	scanf("%d", &n);
+	for (i = 0; i < n; i++) {
+		count = 0;
+		Ocheck = 1;
+		scanf("%s", ox);
+		for (j = 0; j < 100; j++) {
+			if (ox[j] == 'O') {
+				count += Ocheck;
+				Ocheck++;
+				ox[j] = 0;
+			}
+			else if (ox[j] == 'X') {
+				Ocheck = 1;
+				ox[j] = 0;
+			}
+		}
+		printf("%d\n", count);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 4344   : 평균은 넘겠지
+
+int main() {
+	int C, N, n[1000] = { 0 }, i, j, avg = 0, count = 0;
+	scanf("%d", &C);
+	for (i = 0; i < C; i++) {
+		count = 0;
+		avg = 0;
+		scanf("%d", &N);
+		for (j = 0; j < N; j++) {
+			scanf("%d", &n[j]);
+			avg += n[j];
+		}
+		avg /= N;
+		for (j = 0; j < N; j++) {
+			if (n[j] > avg) count++;
+		}
+		printf("%.3lf%%\n", (double)count / N * 100);
+	}
+	return 0;
+}*/
+
+//함수
+/*
+//////////////////// 15596  : 정수 N개의 합
+long long sum(int* a, int n) {
+	long long ans = 0;
+	for (int i = 0; i < n; i++) ans += a[i];
+	return ans;
 }*/
