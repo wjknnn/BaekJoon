@@ -1,3 +1,183 @@
+//Unrated
+/*
+#include<stdio.h> // 1237   : 정ㅋ벅ㅋ
+
+int main() {
+	printf("문제의 정답");
+	return 0;
+}*/
+
+//Bronze
+/*
+#include<stdio.h> // 1009   : 분산처리
+
+int main() {
+	int n, a, b, one;
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d %d", &a, &b);
+		one = a % 10;
+		switch (one) {
+		case 0:
+			printf("10\n");
+		case 1:
+			printf("1\n");
+		case 2:
+
+		case 3:
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		}
+	}
+}
+
+#include<stdio.h> // 1157   : 단어 공부
+
+char word[1000001] = { 0 };
+int main() {
+	int alpha[100] = { 0 }, big = 0, index = 0, count = 0;
+	scanf("%s", word);
+	for (int i = 0; word[i] != 0; i++) {
+		if (word[i] < 91) alpha[word[i] % 65]++;
+		else if (word[i] > 96) alpha[word[i] % 97]++;
+	}
+	for (int i = 0; i < 26; i++) {
+		if (alpha[i] >= big) {
+			count = 0;
+			if (alpha[i] == big) count++;
+			big = alpha[i];
+			index = i;
+		}
+	}
+	if (count > 0) printf("?");
+	else printf("%c", index+65);
+	return 0;
+}
+
+#include<stdio.h> // 20499  : Darius님 한타 안 함?
+
+int main() {
+	int K, D, A;
+	scanf("%d/%d/%d", &K, &D, &A);
+	K + A < D || D == 0 ? printf("hasu") : printf("gosu");
+	return 0;
+}
+
+#include<stdio.h> // 2752   : 세수 정렬
+
+int main() {
+	int n[3], i, j;
+	scanf("%d %d %d", &n[0], &n[1], &n[2]);
+	for (i = 0; i < 3; i++) {
+		for (j = 0; j < 2; j++) {
+			if (n[j] > n[j + 1]) {
+				int temp = n[j];
+				n[j] = n[j + 1];
+				n[j + 1] = temp;
+			}
+		}
+	}
+	printf("%d %d %d", n[0], n[1], n[2]);
+	return 0;
+}
+
+#include<stdio.h> // 2750   : 수 정렬하기
+
+int main() {
+	int n[1000], i, j, N, tempcount = 0;
+	scanf("%d", &N);
+	for (i = 0; i < N; i++) scanf("%d", &n[i]);
+	for (i = 0; i < N; i++) {
+		tempcount = 0;
+		for (j = 0; j < N-i-1; j++) {
+			if (n[j] > n[j + 1]) {
+				int temp = n[j];
+				n[j] = n[j + 1];
+				n[j + 1] = temp;
+				tempcount++;
+			}
+		}
+		if (tempcount == 0) break;
+	}
+	for (i = 0; i < N; i++) printf("%d ", n[i]);
+	return 0;
+}
+
+#include<stdio.h> // 3047   : ABC
+
+int main() {
+	int n[3], i, j;
+	char key[4];
+	scanf("%d %d %d", &n[0], &n[1], &n[2]);
+	scanf("%s", key);
+	for (i = 0; i < 3; i++) {
+		for (j = 0; j < 2; j++) {
+			if (n[j] > n[j + 1]) {
+				int temp = n[j];
+				n[j] = n[j + 1];
+				n[j + 1] = temp;
+			}
+		}
+	}
+	for (i = 0; i < 3; printf("%d ", n[key[i++] - 65]));
+	return 0;
+}
+
+#include<stdio.h> // 10813  : 공 바꾸기
+
+int main() {
+	int N, M, i, j, n[101] = { 0 };
+	scanf("%d %d", &N, &M);
+	for (i = 1; i <= N; i++) n[i] = i;
+	for (i = 1; i <= M; i++) {
+		int n1, n2, temp = 0;
+		scanf("%d %d", &n1, &n2);
+		temp = n[n1];
+		n[n1] = n[n2];
+		n[n2] = temp;
+	}
+	for (i = 1; i <= N; i++) printf("%d ", n[i]);
+	return 0;
+}*/
+
+//Silver
+/**/
+
+//Gold
+/*
+#include<stdio.h> // 1019   : 책 페이지 (fail-time)
+
+int N, num[10] = { 0 }, ten = 10;
+
+void plus(int f, int n, int nanugi) {
+	for (int i = f; i <= N; i++) {
+		if (i == ten) {
+			ten *= 10;
+			plus(i, ten, ten / 10);
+		}
+		num[i % n / nanugi]++;
+	}
+}
+
+int main() {
+	int count = 0, big;
+	for (int i = 0; i < 10; i++) num[i] = 0;
+	scanf("%d", &N);
+	big = N;
+	while (big != 0) {
+		big /= 10;
+		++count;
+	}
+	plus(1, 10, 1);
+	for (int i = 0; i < 10; i++) printf("%d ", num[i]);
+	printf("\n");
+	return 0;
+}*/
+
 //별찍기
 /*
 #include<stdio.h> // 2440   : 별 찍기 - 3
