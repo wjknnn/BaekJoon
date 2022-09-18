@@ -9,6 +9,21 @@ int main() {
 
 //Bronze
 /*
+#include<stdio.h> // 25304  : 영수증
+
+int main() {
+	int result, n, price, count, plus = 0;
+	scanf("%d", &result);
+	scanf("%d", &n);
+	for (int i = 0; i < n; i++) {
+		scanf("%d %d", &price, &count);
+		plus += price * count;
+	}
+	if (result == plus) printf("Yes");
+	else printf("No");
+	return 0;
+}
+
 #include<stdio.h> // 1009   : 분산처리
 
 int main() {
