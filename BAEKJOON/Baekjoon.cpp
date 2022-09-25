@@ -157,6 +157,34 @@ int main() {
 	}
 	for (i = 1; i <= N; i++) printf("%d ", n[i]);
 	return 0;
+}
+
+#include<stdio.h> // 2577   : 숫자의 개수
+
+int main() {
+	int A, B, C, mul = 0, n[10] = { 0 };
+	scanf("%d %d %d", &A, &B, &C);
+	mul = A * B * C;
+	while (mul>0) {
+		n[mul % 10]++;
+		mul /= 10;
+	}
+	for (int i = 0; i < 10; i++) printf("%d\n", n[i]);
+	return 0;
+}
+
+#include<stdio.h> // 11720  : 숫자의 합
+
+int main() {
+	int N, i, add = 0;
+	char n[101] = { 0 };
+	scanf("%d", &N);
+	scanf("%s", n);
+	for (i = 0; i < N; i++) {
+		add += n[i] - 48;
+	}
+	printf("%d", add);
+	return 0;
 }*/
 
 //Silver
