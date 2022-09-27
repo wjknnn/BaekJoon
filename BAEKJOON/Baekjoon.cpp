@@ -979,6 +979,35 @@ int main() {
 	for (i = 0; i < top + 1; i++) add += n[i];
 	printf("%d", add);
 	return 0;
+}
+
+#include<stdio.h> // 9012   : °ýÈ£
+
+bool check(char br[]) {
+	int top = -1;
+	char stack[51] = { 0 };
+	for (int i = 0; br[i] != NULL; i++) {
+		if (br[i] == '(') stack[++top] = br[i];
+		else {
+			if (top > -1) top--;
+			else {
+				return false;
+			}
+		}
+	}
+	return top > -1 ? false : true;
+}
+
+int main() {
+	char br[51] = { 0 };
+	int T;
+	scanf("%d", &T);
+	while (T--) {
+		scanf("%s", br);
+		if (check(br)) printf("YES\n");
+		else printf("NO\n");
+	}
+	return 0;
 }*/
 
 //Silver III
@@ -1039,7 +1068,6 @@ int main() {
 }*/
 
 //Gold VI
-/**/
 
 //Unrated
 /*
