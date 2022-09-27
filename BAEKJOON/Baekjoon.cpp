@@ -1,5 +1,12 @@
 //Bronze V
 /*
+#include<stdio.h> // 11942  : 고려대는 사랑입니다
+
+int main() {
+	printf("고려대학교");
+	return 0;
+}
+
 #include<stdio.h> // 3003   : 킹, 퀸, 룩, 비숍, 나이트, 폰
 
 int main() {
@@ -912,6 +919,67 @@ int main() {
 }*/
 
 //Silver IV
+/*
+#include<stdio.h> // 10828  : 스택
+
+int n[10001], t = -1;
+
+void push(int x) {
+	t++;
+	n[t] = x;
+}
+
+void pop() {
+	if (t > -1) printf("%d\n", n[t--]);
+	else printf("-1\n");
+}
+
+void size() {
+	printf("%d\n", t + 1);
+}
+
+void empty() {
+	if (t == -1) printf("1\n");
+	else printf("0\n");
+}
+
+void top() {
+	if (t > -1) printf("%d\n", n[t]);
+	else printf("-1\n");
+}
+
+int main() {
+	int N, value;
+	char word[6];
+	scanf("%d", &N);
+	while(N--) {
+		scanf("%s", word);
+		if (word[0] == 'p' && word[1] == 'u') {
+			scanf("%d", &value);
+			push(value);
+		}
+		else if (word[0] == 'p' && word[1] == 'o') pop();
+		else if (word[0] == 's') size();
+		else if (word[0] == 'e') empty();
+		else if (word[0] == 't') top();
+	}
+	return 0;
+}
+
+#include<stdio.h> // 10773  : 제로
+
+int main() {
+	int add = 0, top = -1, k, i, n[100000] = { 0 }, num;
+	scanf("%d", &k);
+	while (k--) {
+		scanf("%d", &num);
+		if (num > 0) n[++top] = num;
+		else top--;
+	}
+	for (i = 0; i < top + 1; i++) add += n[i];
+	printf("%d", add);
+	return 0;
+}*/
 
 //Silver III
 
@@ -969,6 +1037,9 @@ int main() {
 	printf("\n");
 	return 0;
 }*/
+
+//Gold VI
+/**/
 
 //Unrated
 /*
