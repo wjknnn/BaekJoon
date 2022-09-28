@@ -1,5 +1,51 @@
 //Bronze V
 /*
+#include<stdio.h> // 10872  : 팩토리얼
+
+int main() {
+	int N, i, add = 1;
+	scanf("%d", &N);
+	if (N == 0) {
+		printf("1");
+		return 0;
+	}
+	for (i = 1; i <= N; i++) add *= i;
+	printf("%d", add);
+	return 0;
+}
+
+#include<stdio.h> // 2420   : 사파리월드
+
+int main() {
+	long long int N, M;
+	scanf("%lld %lld", &N, &M);
+	printf("%lld", N - M < 0 ? -(N - M) : N - M);
+	return 0;
+}
+
+#include<stdio.h> // 11382  : 꼬마 정민
+
+int main() {
+	long long int A, B, C;
+	scanf("%lld %lld %lld", &A, &B, &C);
+	printf("%lld", A + B + C);
+	return 0;
+}
+
+#include<stdio.h> // 7287   : 등록
+
+int main() {
+	printf("69\nkocheck");
+	return 0;
+}
+
+#include<stdio.h> // 10699  : 오늘 날짜
+
+int main() {
+	printf("2022-09-27");
+	return 0;
+}
+
 #include<stdio.h> // 11942  : 고려대는 사랑입니다
 
 int main() {
