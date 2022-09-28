@@ -1,5 +1,98 @@
 //Bronze V
 /*
+#include<stdio.h> // 2754   : 학점계산
+
+int main() {
+	int index = 0;
+	char gr[3];
+	double n[13] = { 0.0,0.7,1.0,1.3,1.7,2.0,2.3,2.7,3.0,3.3,3.7,4.0,4.3 };
+	scanf("%s", gr);
+	if (gr[0] == 'F') index = 0;
+	else if (gr[0] == 'D' && gr[1] == '-') index = 1;
+	else if (gr[0] == 'D' && gr[1] == '0') index = 2;
+	else if (gr[0] == 'D' && gr[1] == '+') index = 3;
+	else if (gr[0] == 'C' && gr[1] == '-') index = 4;
+	else if (gr[0] == 'C' && gr[1] == '0') index = 5;
+	else if (gr[0] == 'C' && gr[1] == '+') index = 6;
+	else if (gr[0] == 'B' && gr[1] == '-') index = 7;
+	else if (gr[0] == 'B' && gr[1] == '0') index = 8;
+	else if (gr[0] == 'B' && gr[1] == '+') index = 9;
+	else if (gr[0] == 'A' && gr[1] == '-') index = 10;
+	else if (gr[0] == 'A' && gr[1] == '0') index = 11;
+	else if (gr[0] == 'A' && gr[1] == '+') index = 12;
+	printf("%.1lf", n[index]);
+	return 0;
+}
+
+#include<stdio.h> // 2744   : 대소문자 바꾸기
+
+int main() {
+	char word[101] = { 0 };
+	scanf("%s", word);
+	for (int i = 0; word[i] != 0; i++) {
+		if (word[i] < 91) printf("%c", word[i] + 32);
+		else printf("%c", word[i] - 32);
+	}
+	return 0;
+}
+
+#include<stdio.h> // 2743   : 단어 길이 재기
+
+int main() {
+	int i, add = 0;
+	char word[101] = { 0 };
+	scanf("%s", word);
+	for (int i = 0; word[i] != 0; i++) add++;
+	printf("%d", add);
+	return 0;
+}
+
+#include<stdio.h> // 2738   : 행렬 덧셈
+
+int main() {
+	int A[100][100] = { 0 }, B[100][100] = { 0 }, i, j, N, M;
+	scanf("%d %d", &N, &M);
+	for (i = 0; i < N; i++) for (j = 0; j < M; j++) scanf("%d", &A[i][j]);
+	for (i = 0; i < N; i++) {
+		for (j = 0; j < M; j++) {
+			scanf("%d", &B[i][j]);
+			printf("%d ", B[i][j] + A[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+#include<stdio.h> // 5597   : 과제 안 내신 분..?
+
+int main() {
+	int n, i, st[31] = { 0 }, n1 = 0, n2 = 0;
+	for (i = 0; i < 28; i++) {
+		scanf("%d", &n);
+		st[n] = 1;
+	}
+	for (i = 1; i <= 30; i++) {
+		if (st[i] == 0) {
+			n2 = n1;
+			n1 = i;
+		}
+	}
+	n1 < n2 ? printf("%d\n%d", n1, n2) : printf("%d\n%d", n2, n1);
+	return 0;
+}
+
+#include<stdio.h> // 10807  : 개수 세기
+
+int main() {
+	int N, i, n[100] = { 0 }, v, cnt = 0;
+	scanf("%d", &N);
+	for (i = 0; i < N; i++) scanf("%d", &n[i]);
+	scanf("%d", &v);
+	for (i = 0; i < N; i++) if (n[i] == v) cnt++;
+	printf("%d", cnt);
+	return 0;
+}
+
 #include<stdio.h> // 10872  : 팩토리얼
 
 int main() {
@@ -1061,8 +1154,6 @@ int main() {
 //Silver II
 
 //Silver I
-
-//Gold V
 /*
 #include<stdio.h> // 2447   : 별 찍기 - 10
 
@@ -1083,7 +1174,10 @@ int main() {
 	}
 	return 0;
 }
+*/
 
+//Gold V
+/*
 #include<stdio.h> // 1019   : 책 페이지 (fail-time)
 
 int N, num[10] = { 0 }, ten = 10;
