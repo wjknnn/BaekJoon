@@ -573,6 +573,11 @@ int main() {
 */
 
 //Bronze III
+//#include<stdio.h> // 20540  : 연길이의 이상형
+//
+//int main() {
+//
+//}
 /*
 #include<stdio.h> // 2441   : 별 찍기 - 4
 
@@ -1150,6 +1155,33 @@ int main() {
 }*/
 
 //Silver III
+/*
+#include<stdio.h> // 10799  : 쇠막대기
+
+int stick = 0, num = 0, add = 0;
+
+void check(char br[]) {
+	for (int i = 0; br[i] != 0; i++) {
+		if (br[i] == '(') {
+			stick++;
+			num++;
+		}
+		else if (br[i] == ')' && br[i - 1] == '(') {
+			num--;
+			stick--;
+			add += stick;
+		}
+		else if (br[i] == ')') stick--;
+	}
+}
+
+int main() {
+	char br[100001] = { 0 };
+	scanf("%s", br);
+	(check(br));
+	printf("%d", add + num);
+	return 0;
+}*/
 
 //Silver II
 
