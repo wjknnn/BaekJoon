@@ -1,5 +1,25 @@
 //Bronze V
 /*
+#include<stdio.h> // 10809  : 알파벳 찾기
+
+int main() {
+	int i, n[26] = { 0 };
+	char arr[101] = { 0 };
+	scanf("%s", arr);
+	for (i = 0; arr[i] != 0; i++) {
+		if (n[arr[i] - 97] == 0) {
+			if(i==0) n[arr[i] - 97] = -2;
+			else n[arr[i] - 97] = i;
+		}
+	}
+	for (i = 0; i < 26; i++) {
+		if (n[i] == 0) printf("-1 ");
+		else if (n[i] == -2) printf("0 ");
+		else printf("%d ", n[i]);
+	}
+	return 0;
+}
+
 #include<stdio.h> // 2754   : 학점계산
 
 int main() {
@@ -573,11 +593,6 @@ int main() {
 */
 
 //Bronze III
-//#include<stdio.h> // 20540  : 연길이의 이상형
-//
-//int main() {
-//
-//}
 /*
 #include<stdio.h> // 2441   : 별 찍기 - 4
 
