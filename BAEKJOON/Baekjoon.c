@@ -594,6 +594,20 @@ int main() {
 
 //Bronze III
 /*
+#include<stdio.h> // 18127  : 모형결정
+
+long long int jaegui(long long int A, long long int B) {
+	if (B == 0) return 1;
+	return A * B + 1 + jaegui(A, B - 1);
+}
+
+int main() {
+	long long int A, B;
+	scanf("%lld %lld", &A, &B);
+	printf("%lld", jaegui(A - 2, B));
+	return 0;
+}
+
 #include<stdio.h> // 2441   : 별 찍기 - 4
 
 int main() {
