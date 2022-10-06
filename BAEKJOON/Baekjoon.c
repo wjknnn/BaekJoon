@@ -479,6 +479,47 @@ int main() {
 
 //Bronze IV
 /*
+#include<stdio.h> // 20232  : Archivist
+
+int main() {
+	int y;
+	scanf("%d", &y);
+	switch (y) {
+	case 1995:
+	case 1998:
+	case 1999:
+	case 2001:
+	case 2002:
+	case 2003:
+	case 2004:
+	case 2005:
+	case 2009:
+	case 2010:
+	case 2011:
+	case 2012:
+	case 2014:
+	case 2015:
+	case 2016:
+	case 2017:
+	case 2019:
+		printf("ITMO");
+		break;
+	case 1996:
+	case 1997:
+	case 2000:
+	case 2007:
+	case 2008:
+	case 2013:
+	case 2018:
+		printf("SPbSU");
+		break;
+	default:
+		printf("PetrSU, ITMO");
+		break;
+	}
+	return 0;
+}
+
 #include<stdio.h> // 20499  : Darius님 한타 안 함?
 
 int main() {
@@ -1039,6 +1080,24 @@ int main() {
 
 //Silver V
 /*
+#include<stdio.h> // 1475   : 방 번호
+
+int main() {
+	int n[10] = { 0 }, N, big = 0, add = 0;
+	scanf("%d", &N);
+	do {
+		n[N % 10]++;
+	} while (N /= 10);
+	for (int i = 0; i < 10; i++) {
+		if (n[i] > big && i != 6 && i != 9) big = n[i];
+		if (i == 6 || i == 9) add += n[i];
+	}
+	add = add % 2 + add / 2;
+	if (add > big) printf("%d", add);
+	else printf("%d", big);
+	return 0;
+}
+
 #include<stdio.h> // 17478  : 재귀함수가 뭔가요?
 
 int i = 0;
