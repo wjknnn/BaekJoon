@@ -1337,3 +1337,26 @@ int main() {
 	printf("문제의 정답");
 	return 0;
 }*/
+
+#include<stdio.h> // 시간초과! 어떻게! 세그먼트 트리! 무엇인가!
+
+int small = 1000000000, n[100000], a;
+
+int small_finder(int b) {
+	if (n[b] < small) small = n[b];
+	if (b == a) return small;
+	return small_finder(b - 1);
+}
+
+int main() {
+	int N, M, b, i;
+	scanf("%d %d", &N, &M);
+	for (i = 0; i < N; i++) { scanf("%d", &n[i]); }
+	while (M--) {
+		scanf("%d %d", &a, &b);
+		a--; b--;
+		small = 1000000000;
+		printf("%d\n", small_finder(b));
+	}
+	return 0;
+}
