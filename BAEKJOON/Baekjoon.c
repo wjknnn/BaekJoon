@@ -1,5 +1,15 @@
 //Bronze V
 /*
+#include<stdio.h> // 11718  : 그대로 출력하기
+
+int main() {
+	char n;
+	while (scanf("%c", &n)!=-1) {
+		printf("%c", n);
+	}
+	return 0;
+}
+
 #include<stdio.h> // 10809  : 알파벳 찾기
 
 int main() {
@@ -302,6 +312,15 @@ int main() {
 		scanf("%d %d", &o, &t);
 		printf("%d\n", o + t);
 	}
+	return 0;
+}
+
+#include<stdio.h> // 2558   : A+B - 2
+
+int main() {
+	int A, B;
+	scanf("%d %d", &A, &B);
+	printf("%d", A + B);
 	return 0;
 }
 
@@ -1331,6 +1350,13 @@ int main() {
 
 //Unrated
 /*
+#include<stdio.h> // 15802  : 타노스
+
+int main() {
+	printf("1");
+	return 0;
+}
+
 #include<stdio.h> // 1237   : 정ㅋ벅ㅋ
 
 int main() {
@@ -1338,25 +1364,25 @@ int main() {
 	return 0;
 }*/
 
-#include<stdio.h> // 시간초과! 어떻게! 세그먼트 트리! 무엇인가!
-
-int small = 1000000000, n[100000], a;
-
-int small_finder(int b) {
-	if (n[b] < small) small = n[b];
-	if (b == a) return small;
-	return small_finder(b - 1);
-}
-
-int main() {
-	int N, M, b, i;
-	scanf("%d %d", &N, &M);
-	for (i = 0; i < N; i++) { scanf("%d", &n[i]); }
-	while (M--) {
-		scanf("%d %d", &a, &b);
-		a--; b--;
-		small = 1000000000;
-		printf("%d\n", small_finder(b));
-	}
-	return 0;
-}
+//#include<stdio.h> // 시간초과! 어떻게! 세그먼트 트리! 무엇인가!
+//
+//int small = 1000000000, n[100000], a;
+//
+//int small_finder(int b) {
+//	if (n[b] < small) small = n[b];
+//	if (b == a) return small;
+//	return small_finder(b - 1);
+//}
+//
+//int main() {
+//	int N, M, b, i;
+//	scanf("%d %d", &N, &M);
+//	for (i = 0; i < N; i++) { scanf("%d", &n[i]); }
+//	while (M--) {
+//		scanf("%d %d", &a, &b);
+//		a--; b--;
+//		small = 1000000000;
+//		printf("%d\n", small_finder(b));
+//	}
+//	return 0;
+//}
