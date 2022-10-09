@@ -878,6 +878,40 @@ int main() {
 */
 
 //Bronze II
+
+#include<stdio.h> // 5576   : 콘테스트
+
+int main() {
+	int w[10], k[10], i, j, big = 0, index = 0, add = 0;
+	for (i = 0; i < 10; i++) scanf("%d", &w[i]);
+	for (i = 0; i < 10; i++) scanf("%d", &k[i]);
+	for (i = 0; i < 3; i++) {
+		big = 0;
+		for (j = 0; j < 10; j++) {
+			if (w[j] > big) {
+				big = w[j];
+				index = j;
+			}
+		}
+		add += big;
+		w[index] = 0;
+	}
+	printf("%d ", add);
+	add = 0;
+	for (i = 0; i < 3; i++) {
+		big = 0;
+		for (j = 0; j < 10; j++) {
+			if (k[j] > big) {
+				big = k[j];
+				index = j;
+			}
+		}
+		add += big;
+		k[index] = 0;
+	}
+	printf("%d", add);
+	return 0;
+}
 /*
 #include<stdio.h> // 1712   : 손익분기점
 
