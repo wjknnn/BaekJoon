@@ -1294,6 +1294,47 @@ int main() {
 
 //Silver I
 /*
+#include<stdio.h> // 1914   : 하노이 탑
+#include<math.h>
+
+void hanoi(int n, int start, int mid, int end) {
+	if (n == 0) return;
+	hanoi(n - 1, start, end, mid);
+	printf("%d %d\n", start, end);
+	hanoi(n - 1, mid, start, end);
+}
+
+void count(int n) {
+	int cntarr[32] = { 0 }, i, re = 1, j;
+	cntarr[0] = 1;
+	while (n--) {
+		j = re;
+		for (i = 0; i < j; i++) cntarr[i] *= 2;
+		for (i = 0; i < j; i++) {
+			if (cntarr[i] > 9) {
+				cntarr[i + 1] += cntarr[i] / 10;
+				cntarr[i] %= 10;
+				if (i == j - 1) re++;
+			}
+		}
+	}
+	cntarr[0]--;
+	for (i = re - 1; i >= 0; i--) printf("%d", cntarr[i]);
+}
+
+int main() {
+	int n;
+	scanf("%d", &n);
+	if (n <= 20) {
+		printf("%.0lf\n", pow(2, n) - 1);
+		hanoi(n, 1, 2, 3);
+	}
+	else count(n);
+	return 0;
+}*/
+
+//Gold V
+/*
 #include<stdio.h> // 2447   : 별 찍기 - 10
 
 void Star(int N, int i, int j) {
@@ -1313,10 +1354,7 @@ int main() {
 	}
 	return 0;
 }
-*/
 
-//Gold V
-/*
 #include<stdio.h> // 1019   : 책 페이지 (fail-time)
 
 int N, num[10] = { 0 }, ten = 10;
