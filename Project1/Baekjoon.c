@@ -654,6 +654,17 @@ int main() {
 
 //Bronze III
 /*
+#include<stdio.h> // 10817  : 세 수
+
+int main() {
+	int A, B, C;
+	scanf("%d %d %d", &A, &B, &C);
+	if ((A >= B && B >= C) || (C >= B && B >= A)) printf("%d", B);
+	else if ((B >= A && A >= C) || (C >= A && A >= B)) printf("%d", A);
+	else if ((B >= C && C >= A) || (A >= C && C >= B)) printf("%d", C);
+	return 0;
+}
+
 #include<stdio.h> // 18127  : 모형결정
 
 long long int jaegui(long long int A, long long int B) {
