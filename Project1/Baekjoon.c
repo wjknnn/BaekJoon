@@ -1,5 +1,14 @@
 //Bronze V
 /*
+#include<stdio.h> // 5337   : 웰컴
+
+int main() {
+	printf(".  .   .\n");
+	printf("|  | _ | _. _ ._ _  _\n");
+	printf("|/\\|(/.|(_.(_)[ | )(/.\n");
+	return 0;
+}
+
 #include<stdio.h> // 5338   : 마이크로소프트 로고
 
 int main() {
