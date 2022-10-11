@@ -1,5 +1,17 @@
 //Bronze V
 /*
+#include<stdio.h> // 2475   : 검증수
+
+int main() {
+	int i = 5, n, add = 0;
+	while (i--) {
+		scanf("%d", &n);
+		add += n * n;
+	}
+	printf("%d", add % 10);
+	return 0;
+}
+
 #include<stdio.h> // 10757  : 큰 수 A+B
 #include<string.h>
 
