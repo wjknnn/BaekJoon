@@ -1,4 +1,26 @@
 //Bronze V
+
+//#include<stdio.h> // 10757  : 큰 수 A+B
+//
+//int main() {
+//	char A[100] = { 0 }, B[100] = { 0 };
+//	int i, re = 1, n;
+//	scanf("%s %s", A, B);
+//	n = strlen(A) > strlen(B) ? strlen(A) : strlen(B);
+//	for (i = 0; i < n; i++) A[i] += B[i];
+//	for (i = 0; ; i++) {
+//		if (A[i] > 9) {
+//			A[i + 1] += A[i] / 10;
+//			A[i] %= 10;
+//			if (A[i + 1] == 0) {
+//				re = i + 1;
+//				break;
+//			}
+//		}
+//	}
+//	for (i = 0; i < re; i++) printf("%d", A[i]);
+//	return 0;
+//}
 /*
 #include<stdio.h> // 11718  : 그대로 출력하기
 
@@ -878,7 +900,7 @@ int main() {
 */
 
 //Bronze II
-
+/*
 #include<stdio.h> // 5576   : 콘테스트
 
 int main() {
@@ -912,7 +934,7 @@ int main() {
 	printf("%d", add);
 	return 0;
 }
-/*
+
 #include<stdio.h> // 1712   : 손익분기점
 
 int main() {
@@ -1336,6 +1358,39 @@ int main() {
 }*/
 
 //Silver II
+/*
+#include<stdio.h> // 1406   : 에디터
+#include<string.h>
+
+int top1, top2 = -1, i;
+char stack1[600001] = { 0 }, stack2[600001] = { 0 };
+
+int main() {
+	int M;
+	char m, c;
+	scanf("%s", stack1);
+	top1 = strlen(stack1) - 1;
+	scanf("%d", &M);
+	for (i = 0; i < M; i++) {
+		scanf("\n%c", &m);
+		if (m == 'L') {
+			if (top1 > -1) stack2[++top2] = stack1[top1--];
+		}
+		else if (m == 'D') {
+			if (top2 > -1) stack1[++top1] = stack2[top2--];
+		}
+		else if (m == 'B') {
+			if (top1 > -1) top1--;
+		}
+		else if (m == 'P') {
+			scanf(" %c", &c);
+			stack1[++top1] = c;
+		}
+	}
+	for (i = 0; i < top1 + 1; i++) printf("%c", stack1[i]);
+	for (i = top2; i >= 0; i--) printf("%c", stack2[i]);
+	return 0;
+}*/
 
 //Silver I
 /*
