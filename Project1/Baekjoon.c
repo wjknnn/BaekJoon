@@ -1,5 +1,16 @@
 //Bronze V
 /*
+#include<stdio.h> // 5338   : 마이크로소프트 로고
+
+int main() {
+	printf("       _.-;;-._\n");
+	printf("'-..-'|   ||   |\n");
+	printf("'-..-'|_.-;;-._|\n");
+	printf("'-..-'|   ||   |\n");
+	printf("'-..-'|_.-''-._|\n");
+	return 0;
+}
+
 #include<stdio.h> // 2475   : 검증수
 
 int main() {
