@@ -1,27 +1,39 @@
 //Bronze V
-
-//#include<stdio.h> // 10757  : 큰 수 A+B
-//
-//int main() {
-//	char A[100] = { 0 }, B[100] = { 0 };
-//	int i, re = 1, n;
-//	scanf("%s %s", A, B);
-//	n = strlen(A) > strlen(B) ? strlen(A) : strlen(B);
-//	for (i = 0; i < n; i++) A[i] += B[i];
-//	for (i = 0; ; i++) {
-//		if (A[i] > 9) {
-//			A[i + 1] += A[i] / 10;
-//			A[i] %= 10;
-//			if (A[i + 1] == 0) {
-//				re = i + 1;
-//				break;
-//			}
-//		}
-//	}
-//	for (i = 0; i < re; i++) printf("%d", A[i]);
-//	return 0;
-//}
 /*
+#include<stdio.h> // 10757  : 큰 수 A+B
+#include<string.h>
+
+char A[10001] = { 0 }, B[10001] = { 0 };
+int  N[10002] = { 0 };
+
+int main() {
+	int i, j, n, id = 0;
+	scanf("%s %s", A, B);
+	for (i = strlen(B) - 1, j = strlen(A) - 1; i >= 0 && j >= 0; i--, j--) {
+		N[id] += A[j] + B[i] - 96;
+		N[id + 1] += N[id] / 10;
+		N[id] %= 10;
+		id++;
+	}
+	while (i >= 0) {
+		N[id] += B[i] - 48;
+		N[id + 1] += N[id] / 10;
+		N[id] %= 10;
+		id++;
+		i--;
+	}
+	while (j >= 0) {
+		N[id] += A[j] - 48;
+		N[id + 1] += N[id] / 10;
+		N[id] %= 10;
+		id++;
+		j--;
+	}
+	if (N[id] != 0) printf("%d", N[id]);
+	for (i = id - 1; i >= 0; i--) printf("%d", N[i]);
+	return 0;
+}
+
 #include<stdio.h> // 11718  : 그대로 출력하기
 
 int main() {
