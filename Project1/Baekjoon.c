@@ -1393,6 +1393,28 @@ int main() {
 
 //Silver III
 /*
+#include<stdio.h> // 1003   : 피보나치 함수
+
+int arr[1000];
+
+int fibonacci(int n) {
+	if (n == 0) return 0;
+	else if (n == 1) return 1;
+	else if (arr[n] != 0) return arr[n];
+	else return arr[n] = fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int main() {
+	int T, N;
+	scanf("%d", &T);
+	for (int i = 0; i < T; i++) {
+		scanf("%d", &N);
+		if (N == 0) puts("1 0");
+		else printf("%d %d\n", fibonacci(N - 1), fibonacci(N));
+	}
+	return 0;
+}
+
 #include<stdio.h> // 10799  : 쇠막대기
 
 int stick = 0, num = 0, add = 0;
