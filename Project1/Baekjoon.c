@@ -964,6 +964,22 @@ int main() {
 
 //Bronze II
 /*
+#include<stdio.h> // 1009   : 분산처리
+
+int main() {
+	int i, T, a, b, r;
+	scanf("%d", &T);
+	while (T--) {
+		scanf("%d %d", &a, &b);
+		r = a;
+		b = b % 4 + 4;
+		for (i = 1; i < b; i++) r = (r * a) % 10;
+		if (r == 0) r = 10;
+		printf("%d\n", r);
+	}
+	return 0;
+}
+
 #include<stdio.h> // 5576   : 콘테스트
 
 int main() {
