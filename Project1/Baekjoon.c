@@ -1,5 +1,8 @@
 //Bronze V
 /*
+#include<stdio.h> // 4101   : 크냐?
+int main(n,m){while(scanf("%d%d",&n,&m),n)puts(n>m?"Yes":"No");}
+
 #include<stdio.h> // 9653   : 스타워즈 로고
 
 int main() {
