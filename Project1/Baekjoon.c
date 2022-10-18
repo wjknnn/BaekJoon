@@ -1,5 +1,20 @@
 //Bronze V
 /*
+#include<stdio.h> // 9086   : 문자열
+#include<stdlib.h>
+
+int main() {
+	char arr[1001] = { 0 };
+	int T, arrLength;
+	scanf("%d", &T);
+	while (T--) {
+		scanf("%s", arr);
+		arrLength = strlen(arr);
+		printf("%c%c\n", arr[0], arr[arrLength - 1]);
+	}
+	return 0;
+}
+
 #include<stdio.h> // 4101   : 크냐?
 int main(n,m){while(scanf("%d%d",&n,&m),n)puts(n>m?"Yes":"No");}
 
