@@ -1,5 +1,14 @@
 //Bronze V
 /*
+#include<stdio.h> // 15964  : 이상한 기호
+
+int main() {
+	long long int A, B;
+	scanf("%lld %lld", &A, &B);
+	printf("%lld", (A + B) * (A - B));
+	return 0;
+}
+
 #include<stdio.h> // 9086   : 문자열
 #include<stdlib.h>
 
