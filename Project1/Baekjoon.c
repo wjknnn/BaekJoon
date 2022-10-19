@@ -1559,6 +1559,22 @@ int main() {
 }*/
 
 //Gold V
+//#include<stdio.h> // 1599   : ¹Î½Ä¾î
+//
+//char alpha[21] = { 'a','b','k','d','e','g','h','i','l','m','n','n','o','p','r','s','t','u','w','y' };
+//
+//struct Storage {
+//	int index;
+//	char arr[100];
+//} word[100];
+//
+//
+//
+//int main() {
+//	int N, i;
+//	scanf("%d", &N);
+//	for (i = 0; i < N; i++) scanf("%s", word[i].arr);
+//}
 /*
 #include<stdio.h> // 2447   : º° Âï±â - 10
 
@@ -1610,6 +1626,37 @@ int main() {
 }*/
 
 //Gold VI
+/*
+#include<stdio.h> // 9935   : ¹®ÀÚ¿­ Æø¹ß
+#include<string.h>
+
+int top1 = -1, top2 = -1;
+char stack1[1000001], stack2[1000001], boom[37];
+
+int main() {
+	int stacklength, boomlength, i;
+	scanf("%s", stack1);
+	stacklength = strlen(stack1);
+	scanf("%s", boom);
+	boomlength = strlen(boom);
+	while (stacklength--) {
+		stack2[++top2] = stack1[++top1];
+		if (stack2[top2] == boom[boomlength-1]) {
+			int bleng = boomlength - 1;
+			for (i = top2; i > top2 - boomlength; i--) {
+				if (top2 - boomlength + 1 < 0) break;
+				if (stack2[i] == boom[bleng]) {
+					if (i == top2 - boomlength + 1 && stack2[i] == boom[bleng]) top2 -= boomlength;
+					bleng--;
+				}
+				else break;
+			}
+		}
+	}
+	if (top2 < 0) printf("FRULA");
+	else for (i = 0; i <= top2; i++) printf("%c", stack2[i]);
+	return 0;
+}*/
 
 //Unrated
 /*
