@@ -1182,6 +1182,24 @@ int main() {
 */
 
 //Bronze I
+
+#include<stdio.h> // 2456   : 나는 학급회장이다 //solving
+
+int main() {
+	int N, stc[3] = { 0 }, stp[3] = { 0 }, n1, n2, n3;
+	scanf("%d", &N);
+	while (N--) {
+		scanf("%d %d %d", &n1, &n2, &n3);
+		stc[n1 - 1] += n1; stc[n2 - 1] += n2; stc[n3 - 1] += n3;
+		stp[n1 - 1] += n1 * n1; stp[n2 - 1] += n2 * n2; stp[n3 - 1] += n3 * n3;
+	}
+	if (stp[0] == stp[1] && stp[0] == stp[2]) printf("0 %d", stc[0]);
+	else if (stp[0] == stp[1]) printf("0 %d", stp[0] > stp[2] ? stc[0] : stc[2]);
+	else if (stp[1] == stp[2]) printf("0 %d", stp[1] > stp[0] ? stc[1] : stc[0]);
+	else if (stp[2] == stp[0]) printf("0 %d", stp[2] > stp[1] ? stc[2] : stc[1]);
+	else stp[0] > stp[1] ? stp[0] > stp[2] ? printf("1 %d", stc[0]) : printf("3 %d", stc[2]) : stp[1] > stp[2] ? stp[1] > stp[0] ? printf("2 %d", stc[1]) : printf("1 %d", stc[0]) : stp[2] > stp[0] ? stp[2] > stp[1] ? printf("3 %d", stc[2]) : printf("2 %d", stc[1]) : 0;
+	return 0;
+}
 /*
 #include<stdio.h> // 1110   : 더하기 사이클
 
@@ -1266,7 +1284,6 @@ int main() {
 	return 0;
 }
 */
-
 //Silver V
 /*
 #include<stdio.h> // 1475   : 방 번호
@@ -1519,6 +1536,25 @@ int main() {
 
 //Silver I
 /*
+#include<stdio.h> // 1393   : 음하철도 구구팔 //no solve
+#include<math.h>
+
+double root(double A) {
+	return pow(A, 2) + 1;
+}
+
+int main() {
+	int xs, ys, xe, ye, dx, dy, nx, ny;
+	double d, near = 1000;
+	scanf("%d %d", &xs, &ys);
+	scanf("%d %d %d %d", &xe, &ye, &dx, &dy);
+	double A = dy / dx;
+	double C = A * -xe + ye;
+	double under = root(A);
+	//printf("%d %d", nx, ny);
+	return 0;
+}
+
 #include<stdio.h> // 1914   : 하노이 탑
 #include<math.h>
 
@@ -1559,22 +1595,6 @@ int main() {
 }*/
 
 //Gold V
-//#include<stdio.h> // 1599   : 민식어
-//
-//char alpha[21] = { 'a','b','k','d','e','g','h','i','l','m','n','n','o','p','r','s','t','u','w','y' };
-//
-//struct Storage {
-//	int index;
-//	char arr[100];
-//} word[100];
-//
-//
-//
-//int main() {
-//	int N, i;
-//	scanf("%d", &N);
-//	for (i = 0; i < N; i++) scanf("%s", word[i].arr);
-//}
 /*
 #include<stdio.h> // 2447   : 별 찍기 - 10
 
