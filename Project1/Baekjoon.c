@@ -1182,25 +1182,25 @@ int main() {
 */
 
 //Bronze I
-
-#include<stdio.h> // 2456   : 나는 학급회장이다 //solving
+/*
+#include<stdio.h> // 2456   : 나는 학급회장이다
 
 int main() {
 	int N, stc[3] = { 0 }, stp[3] = { 0 }, n1, n2, n3;
 	scanf("%d", &N);
 	while (N--) {
 		scanf("%d %d %d", &n1, &n2, &n3);
-		stc[n1 - 1] += n1; stc[n2 - 1] += n2; stc[n3 - 1] += n3;
-		stp[n1 - 1] += n1 * n1; stp[n2 - 1] += n2 * n2; stp[n3 - 1] += n3 * n3;
+		stc[0] += n1; stc[1] += n2; stc[2] += n3;
+		stp[0] += n1 * n1; stp[1] += n2 * n2; stp[2] += n3 * n3;
 	}
 	if (stp[0] == stp[1] && stp[0] == stp[2]) printf("0 %d", stc[0]);
-	else if (stp[0] == stp[1]) printf("0 %d", stp[0] > stp[2] ? stc[0] : stc[2]);
-	else if (stp[1] == stp[2]) printf("0 %d", stp[1] > stp[0] ? stc[1] : stc[0]);
-	else if (stp[2] == stp[0]) printf("0 %d", stp[2] > stp[1] ? stc[2] : stc[1]);
+	else if (stp[0] == stp[1]) stp[0] > stp[2] ? printf("0 %d", stc[0]) : printf("3 %d", stc[2]);
+	else if (stp[1] == stp[2]) stp[1] > stp[0] ? printf("0 %d", stc[1]) : printf("1 %d", stc[0]);
+	else if (stp[2] == stp[0]) stp[2] > stp[1] ? printf("0 %d", stc[2]) : printf("2 %d", stc[1]);
 	else stp[0] > stp[1] ? stp[0] > stp[2] ? printf("1 %d", stc[0]) : printf("3 %d", stc[2]) : stp[1] > stp[2] ? stp[1] > stp[0] ? printf("2 %d", stc[1]) : printf("1 %d", stc[0]) : stp[2] > stp[0] ? stp[2] > stp[1] ? printf("3 %d", stc[2]) : printf("2 %d", stc[1]) : 0;
 	return 0;
 }
-/*
+
 #include<stdio.h> // 1110   : 더하기 사이클
 
 int main() {
