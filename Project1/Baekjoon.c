@@ -988,6 +988,20 @@ int main() {
 
 //Bronze II
 /*
+#include<stdio.h> // 1152   : 단어의 개수
+#include<string.h>
+
+char ch[1000001] = { 0 };
+
+int main() {
+	int cnt = 0, l;
+	scanf("%[^\n]s", ch);
+	l = strlen(ch) - 1;
+	while (l--) if (ch[l] == 32 && l != 0) cnt++;
+	printf("%d", strlen(ch) == 1 && ch[0] == 32 ? cnt : cnt + 1);
+	return 0;
+}
+
 #include<stdio.h> // 2920   : 음계
 
 int main() {
@@ -1331,6 +1345,7 @@ int main() {
 	return 0;
 }
 */
+
 //Silver V
 /*
 #include<stdio.h> // 1475   : 방 번호
