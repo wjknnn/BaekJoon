@@ -988,6 +988,25 @@ int main() {
 
 //Bronze II
 /*
+#include<stdio.h> // 2675   : 문자열 반복
+#include<string.h>
+
+int main() {
+	int T, R, len, r, i;
+	char S[21] = { 0 };
+	scanf("%d", &T);
+	while (T--) {
+		scanf("%d %s", &R, S);
+		len = strlen(S);
+		for (i = 0; i < len; i++) {
+			r = R;
+			while (r--) printf("%c", S[i]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
 #include<stdio.h> // 1009   : 분산처리
 
 int main() {
@@ -1535,26 +1554,28 @@ int main() {
 }*/
 
 //Silver I
+
+//#include<stdio.h> // 1393   : 음하철도 구구팔 //no solve
+//#include<math.h>
+//
+//double root(double A) {
+//	return pow(A, 2) + 1;
+//}
+//
+//int main() {
+//	int xs, ys, xe, ye, dx, dy;
+//	double d, near = 1000;
+//	scanf("%d %d", &xs, &ys);
+//	scanf("%d %d %d %d", &xe, &ye, &dx, &dy);
+//	double A = dy / dx;
+//	double C = A * -xe + ye;
+//	double under = root(A);
+//	double d = A + 1 + C / under;
+//	d = d > 0 ? d : -d;
+//
+//	return 0;
+//}
 /*
-#include<stdio.h> // 1393   : 음하철도 구구팔 //no solve
-#include<math.h>
-
-double root(double A) {
-	return pow(A, 2) + 1;
-}
-
-int main() {
-	int xs, ys, xe, ye, dx, dy, nx, ny;
-	double d, near = 1000;
-	scanf("%d %d", &xs, &ys);
-	scanf("%d %d %d %d", &xe, &ye, &dx, &dy);
-	double A = dy / dx;
-	double C = A * -xe + ye;
-	double under = root(A);
-	//printf("%d %d", nx, ny);
-	return 0;
-}
-
 #include<stdio.h> // 1914   : 하노이 탑
 #include<math.h>
 
