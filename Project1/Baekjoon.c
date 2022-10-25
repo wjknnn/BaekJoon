@@ -988,6 +988,34 @@ int main() {
 
 //Bronze II
 /*
+#include<stdio.h> // 2920   : 음계
+
+int main() {
+	int i, num;
+	scanf("%d", &num);
+	if (num == 1) {
+		for (i = 1; i < 8; i++) {
+			scanf("%d", &num);
+			if (num != i + 1) {
+				printf("mixed");
+				break;
+			}
+		}
+		if (i == 8) printf("ascending");
+	}
+	else {
+		for (i = 6; i > 0; i--) {
+			scanf("%d", &num);
+			if (num != i + 1) {
+				printf("mixed");
+				break;
+			}
+		}
+		if (i == 0) printf("descending");
+	}
+	return 0;
+}
+
 #include<stdio.h> // 2675   : 문자열 반복
 #include<string.h>
 
