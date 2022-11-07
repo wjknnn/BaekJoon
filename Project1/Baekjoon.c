@@ -1,5 +1,19 @@
 //Bronze V
 /*
+#include<stdio.h> // 4999   : 아!
+#include<string.h>
+
+int main() {
+	char arr[1000] = { 0 };
+	int l1, l2;
+	gets(arr);
+	l1 = strlen(arr);
+	gets(arr);
+	l2 = strlen(arr);
+	l1 < l2 ? printf("no") : printf("go");
+	return 0;
+}
+
 #include<stdio.h> // 15964  : 이상한 기호
 
 int main() {
@@ -1347,6 +1361,24 @@ int main() {
 */
 
 //Silver V
+
+//#include<stdio.h> // 11564  : 점프왕 최준민
+//
+//long long int abs(long long int a) {
+//	return a < 0 ? -a : a;
+//}
+//
+//int check(long long int a, long long int b) {
+//	return a <= 0 && b >= 0 || a >= 0 && b <= 0;
+//}
+//
+//int main() {
+//	long long int k, a, b, i, cnt;
+//	scanf("%lld %lld %lld", &k, &a, &b);
+//	cnt = check(a, b) ? abs(a) / k + abs(b) / k + 1 : (abs(a - b) + 1) / k;
+//	printf("%lld", cnt);
+//	return 0;
+//}
 /*
 #include<stdio.h> // 1475   : 방 번호
 
