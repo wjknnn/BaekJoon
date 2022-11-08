@@ -1,5 +1,17 @@
 //Bronze V
 /*
+#include<stdio.h> // 5522   : 카드 게임
+
+int main() {
+	long long int n, add = 0;
+	for (int i = 0; i < 5; i++) {
+		scanf("%lld", &n);
+		add += n;
+	}
+	printf("%lld", add);
+	return 0;
+}
+
 #include<stdio.h> // 5339   : 콜센터
 
 int main() {
