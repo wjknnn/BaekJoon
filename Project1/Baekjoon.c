@@ -1,5 +1,21 @@
 //Bronze V
 /*
+#include<stdio.h> // 5339   : 콜센터
+
+int main() {
+	printf("     /~\\\n");
+	printf("    ( oo|\n");
+	printf("    _\\=/_\n");
+	printf("   /  _  \\\n");
+	printf("  //|/.\\|\\\\\n");
+	printf(" ||  \\ /  ||\n");
+	printf("============\n");
+	printf("|          |\n");
+	printf("|          |\n");
+	printf("|          |");
+	return 0;
+}
+
 #include<stdio.h> // 4999   : 아!
 #include<string.h>
 
