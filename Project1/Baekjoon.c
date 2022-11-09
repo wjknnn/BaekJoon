@@ -1,5 +1,12 @@
 //Bronze V
 /*
+#include<stdio.h> // 16170  : 오늘의 날짜는?
+
+int main() {
+	printf("2022\n11\n09");
+	return 0;
+}
+
 #include<stdio.h> // 15962  : 새로운 시작
 
 int main() {
