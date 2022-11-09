@@ -1,5 +1,14 @@
 //Bronze V
 /*
+#include<stdio.h> // 16394  : 홍익대학교
+
+int main() {
+	int year;
+	scanf("%d", &year);
+	printf("%d", year - 1946);
+	return 0;
+}
+
 #include<stdio.h> // 16170  : 오늘의 날짜는?
 
 int main() {
