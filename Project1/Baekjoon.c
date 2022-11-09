@@ -1,4 +1,11 @@
 //Bronze V
+
+#include<stdio.h> // 15733  : 나는 누구인가
+
+int main() {
+	printf("I'm Sexy");
+	return 0;
+}
 /*
 #include<stdio.h> // 9654   : 나무 함대 데이터
 
