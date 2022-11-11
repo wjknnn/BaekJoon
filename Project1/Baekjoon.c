@@ -1,6 +1,17 @@
 //Bronze V
 /*
-#include<stdio.h> // 16394  : È«ÀÍ´ëÇĞ±³
+#include<stdio.h> // 20492  : ì„¸ê¸ˆ
+
+int main() {
+	int N, first, two;
+	scanf("%d". & N);
+	first = N - (N / 100 * 22);
+	two = N - ((N - (N / 100 * 80)) / 100 * 22);
+	printf("%d %d", first, two);
+	return 0;
+}
+
+#include<stdio.h> // 16394  : í™ìµëŒ€í•™êµ
 
 int main() {
 	int year;
@@ -9,28 +20,28 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 16170  : ¿À´ÃÀÇ ³¯Â¥´Â?
+#include<stdio.h> // 16170  : ì˜¤ëŠ˜ì˜ ë‚ ì§œëŠ”?
 
 int main() {
 	printf("2022\n11\n09");
 	return 0;
 }
 
-#include<stdio.h> // 15962  : »õ·Î¿î ½ÃÀÛ
+#include<stdio.h> // 15962  : ìƒˆë¡œìš´ ì‹œì‘
 
 int main() {
-	printf("ÆÄÀÌÆÃ!!");
+	printf("íŒŒì´íŒ…!!");
 	return 0;
 }
 
-#include<stdio.h> // 15733  : ³ª´Â ´©±¸ÀÎ°¡
+#include<stdio.h> // 15733  : ë‚˜ëŠ” ëˆ„êµ¬ì¸ê°€
 
 int main() {
 	printf("I'm Sexy");
 	return 0;
 }
 
-#include<stdio.h> // 9654   : ³ª¹« ÇÔ´ë µ¥ÀÌÅÍ
+#include<stdio.h> // 9654   : ë‚˜ë¬´ í•¨ëŒ€ ë°ì´í„°
 
 int main() {
 	printf("SHIP NAME      CLASS          DEPLOYMENT IN SERVICE\n");
@@ -42,7 +53,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 5522   : Ä«µå °ÔÀÓ
+#include<stdio.h> // 5522   : ì¹´ë“œ ê²Œì„
 
 int main() {
 	long long int n, add = 0;
@@ -54,7 +65,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 5339   : Äİ¼¾ÅÍ
+#include<stdio.h> // 5339   : ì½œì„¼í„°
 
 int main() {
 	printf("     /~\\\n");
@@ -70,7 +81,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 4999   : ¾Æ!
+#include<stdio.h> // 4999   : ì•„!
 #include<string.h>
 
 int main() {
@@ -84,7 +95,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 15964  : ÀÌ»óÇÑ ±âÈ£
+#include<stdio.h> // 15964  : ì´ìƒí•œ ê¸°í˜¸
 
 int main() {
 	long long int A, B;
@@ -93,7 +104,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 9086   : ¹®ÀÚ¿­
+#include<stdio.h> // 9086   : ë¬¸ìì—´
 #include<stdlib.h>
 
 int main() {
@@ -108,10 +119,10 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 4101   : Å©³Ä?
+#include<stdio.h> // 4101   : í¬ëƒ?
 int main(n,m){while(scanf("%d%d",&n,&m),n)puts(n>m?"Yes":"No");}
 
-#include<stdio.h> // 9653   : ½ºÅ¸¿öÁî ·Î°í
+#include<stdio.h> // 9653   : ìŠ¤íƒ€ì›Œì¦ˆ ë¡œê³ 
 
 int main() {
 	printf("    8888888888  888    88888\n");
@@ -127,7 +138,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 5337   : À£ÄÄ
+#include<stdio.h> // 5337   : ì›°ì»´
 
 int main() {
 	printf(".  .   .\n");
@@ -136,7 +147,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 5338   : ¸¶ÀÌÅ©·Î¼ÒÇÁÆ® ·Î°í
+#include<stdio.h> // 5338   : ë§ˆì´í¬ë¡œì†Œí”„íŠ¸ ë¡œê³ 
 
 int main() {
 	printf("       _.-;;-._\n");
@@ -147,7 +158,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2475   : °ËÁõ¼ö
+#include<stdio.h> // 2475   : ê²€ì¦ìˆ˜
 
 int main() {
 	int i = 5, n, add = 0;
@@ -159,7 +170,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10757  : Å« ¼ö A+B
+#include<stdio.h> // 10757  : í° ìˆ˜ A+B
 #include<string.h>
 
 char A[10001] = { 0 }, B[10001] = { 0 };
@@ -193,7 +204,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 11718  : ±×´ë·Î Ãâ·ÂÇÏ±â
+#include<stdio.h> // 11718  : ê·¸ëŒ€ë¡œ ì¶œë ¥í•˜ê¸°
 
 int main() {
 	char n;
@@ -203,7 +214,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10809  : ¾ËÆÄºª Ã£±â
+#include<stdio.h> // 10809  : ì•ŒíŒŒë²³ ì°¾ê¸°
 
 int main() {
 	int i, n[26] = { 0 };
@@ -223,7 +234,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2754   : ÇĞÁ¡°è»ê
+#include<stdio.h> // 2754   : í•™ì ê³„ì‚°
 
 int main() {
 	int index = 0;
@@ -247,7 +258,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2744   : ´ë¼Ò¹®ÀÚ ¹Ù²Ù±â
+#include<stdio.h> // 2744   : ëŒ€ì†Œë¬¸ì ë°”ê¾¸ê¸°
 
 int main() {
 	char word[101] = { 0 };
@@ -259,7 +270,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2743   : ´Ü¾î ±æÀÌ Àç±â
+#include<stdio.h> // 2743   : ë‹¨ì–´ ê¸¸ì´ ì¬ê¸°
 
 int main() {
 	int i, add = 0;
@@ -270,7 +281,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2738   : Çà·Ä µ¡¼À
+#include<stdio.h> // 2738   : í–‰ë ¬ ë§ì…ˆ
 
 int main() {
 	int A[100][100] = { 0 }, B[100][100] = { 0 }, i, j, N, M;
@@ -286,7 +297,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 5597   : °úÁ¦ ¾È ³»½Å ºĞ..?
+#include<stdio.h> // 5597   : ê³¼ì œ ì•ˆ ë‚´ì‹  ë¶„..?
 
 int main() {
 	int n, i, st[31] = { 0 }, n1 = 0, n2 = 0;
@@ -304,7 +315,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10807  : °³¼ö ¼¼±â
+#include<stdio.h> // 10807  : ê°œìˆ˜ ì„¸ê¸°
 
 int main() {
 	int N, i, n[100] = { 0 }, v, cnt = 0;
@@ -316,7 +327,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10872  : ÆÑÅä¸®¾ó
+#include<stdio.h> // 10872  : íŒ©í† ë¦¬ì–¼
 
 int main() {
 	int N, i, add = 1;
@@ -330,7 +341,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2420   : »çÆÄ¸®¿ùµå
+#include<stdio.h> // 2420   : ì‚¬íŒŒë¦¬ì›”ë“œ
 
 int main() {
 	long long int N, M;
@@ -339,7 +350,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 11382  : ²¿¸¶ Á¤¹Î
+#include<stdio.h> // 11382  : ê¼¬ë§ˆ ì •ë¯¼
 
 int main() {
 	long long int A, B, C;
@@ -348,28 +359,28 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 7287   : µî·Ï
+#include<stdio.h> // 7287   : ë“±ë¡
 
 int main() {
 	printf("69\nkocheck");
 	return 0;
 }
 
-#include<stdio.h> // 10699  : ¿À´Ã ³¯Â¥
+#include<stdio.h> // 10699  : ì˜¤ëŠ˜ ë‚ ì§œ
 
 int main() {
 	printf("2022-09-27");
 	return 0;
 }
 
-#include<stdio.h> // 11942  : °í·Á´ë´Â »ç¶ûÀÔ´Ï´Ù
+#include<stdio.h> // 11942  : ê³ ë ¤ëŒ€ëŠ” ì‚¬ë‘ì…ë‹ˆë‹¤
 
 int main() {
-	printf("°í·Á´ëÇĞ±³");
+	printf("ê³ ë ¤ëŒ€í•™êµ");
 	return 0;
 }
 
-#include<stdio.h> // 3003   : Å·, Äı, ·è, ºñ¼ó, ³ªÀÌÆ®, Æù
+#include<stdio.h> // 3003   : í‚¹, í€¸, ë£©, ë¹„ìˆ, ë‚˜ì´íŠ¸, í°
 
 int main() {
 	int k, q, r, b, kn, p;
@@ -402,7 +413,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2438   : º° Âï±â - 1
+#include<stdio.h> // 2438   : ë³„ ì°ê¸° - 1
 
 int main() {
 	int n, i, j;
@@ -418,7 +429,7 @@ int main() {
 
 
 
-#include<stdio.h> // 10871  : Xº¸´Ù ÀÛÀº ¼ö
+#include<stdio.h> // 10871  : Xë³´ë‹¤ ì‘ì€ ìˆ˜
 
 int main() {
 	int N, X, n;
@@ -453,7 +464,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2741   : N Âï±â
+#include<stdio.h> // 2741   : N ì°ê¸°
 
 int main() {
 	int N, i;
@@ -464,7 +475,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2739   : ±¸±¸´Ü
+#include<stdio.h> // 2739   : êµ¬êµ¬ë‹¨
 
 int main() {
 	int i, n;
@@ -475,7 +486,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> //  11654  : ¾Æ½ºÅ°ÄÚµå
+#include<stdio.h> //  11654  : ì•„ìŠ¤í‚¤ì½”ë“œ
 
 int main() {
 	char value;
@@ -484,7 +495,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2753   : À±³â
+#include<stdio.h> // 2753   : ìœ¤ë…„
 
 int main() {
 	int year;
@@ -517,7 +528,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 8393   : ÇÕ
+#include<stdio.h> // 8393   : í•©
 
 int main() {
 	int n, i, t = 0;
@@ -539,18 +550,18 @@ int main() {
 #include<stdio.h> // 10718  : We love kriii
 
 int main() {
-	printf("°­ÇÑÄ£±¸ ´ëÇÑÀ°±º\n°­ÇÑÄ£±¸ ´ëÇÑÀ°±º");
+	printf("ê°•í•œì¹œêµ¬ ëŒ€í•œìœ¡êµ°\nê°•í•œì¹œêµ¬ ëŒ€í•œìœ¡êµ°");
 	return 0;
 }
 
-#include<stdio.h> // 10171  : °í¾çÀÌ
+#include<stdio.h> // 10171  : ê³ ì–‘ì´
 
 int main() {
 	printf("\\    /\\\n )  ( ')\n(  /  )\n \\(__)|");
 	return 0;
 }
 
-#include<stdio.h> // 225083 : »õ½Ï
+#include<stdio.h> // 225083 : ìƒˆì‹¹
 
 int main() {
 	printf("         ,r\'\"7\n");
@@ -598,7 +609,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10869  : »çÄ¢¿¬»ê
+#include<stdio.h> // 10869  : ì‚¬ì¹™ì—°ì‚°
 
 int main() {
 	int A, B;
@@ -616,7 +627,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 18108  : 1998³â»ıÀÎ ³»°¡ ÅÂ±¹¿¡¼­´Â 2541³â»ı?!
+#include<stdio.h> // 18108  : 1998ë…„ìƒì¸ ë‚´ê°€ íƒœêµ­ì—ì„œëŠ” 2541ë…„ìƒ?!
 
 int main() {
 	int y;
@@ -625,7 +636,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10430  : ³ª¸ÓÁö
+#include<stdio.h> // 10430  : ë‚˜ë¨¸ì§€
 
 int main() {
 	int A, B, C;
@@ -637,7 +648,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 25304  : ¿µ¼öÁõ
+#include<stdio.h> // 25304  : ì˜ìˆ˜ì¦
 
 int main() {
 	int result, n, price, count, plus = 0;
@@ -652,7 +663,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 1330   : µÎ ¼ö ºñ±³ÇÏ±â
+#include<stdio.h> // 1330   : ë‘ ìˆ˜ ë¹„êµí•˜ê¸°
 
 int main() {
 	int A, B;
@@ -661,7 +672,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 9498   : ½ÃÇè ¼ºÀû
+#include<stdio.h> // 9498   : ì‹œí—˜ ì„±ì 
 
 int main() {
 	int A;
@@ -676,7 +687,7 @@ int main() {
 
 
 
-#include<stdio.h> // 14681  : »çºĞ¸é °í¸£±â
+#include<stdio.h> // 14681  : ì‚¬ë¶„ë©´ ê³ ë¥´ê¸°
 
 int main() {
 	int x, y;
@@ -732,7 +743,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 20499  : Darius´Ô ÇÑÅ¸ ¾È ÇÔ?
+#include<stdio.h> // 20499  : Dariusë‹˜ í•œíƒ€ ì•ˆ í•¨?
 
 int main() {
 	int K, D, A;
@@ -741,7 +752,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2752   : ¼¼¼ö Á¤·Ä
+#include<stdio.h> // 2752   : ì„¸ìˆ˜ ì •ë ¬
 
 int main() {
 	int n[3], i, j;
@@ -759,7 +770,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 11720  : ¼ıÀÚÀÇ ÇÕ
+#include<stdio.h> // 11720  : ìˆ«ìì˜ í•©
 
 int main() {
 	int N, i, add = 0;
@@ -773,7 +784,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2439   : º° Âï±â - 2
+#include<stdio.h> // 2439   : ë³„ ì°ê¸° - 2
 
 int main() {
 	int n, i, j;
@@ -790,7 +801,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2440   : º° Âï±â - 3
+#include<stdio.h> // 2440   : ë³„ ì°ê¸° - 3
 
 int main() {
 	int i, j, n;
@@ -802,7 +813,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 15552  : ºü¸¥ A+B
+#include<stdio.h> // 15552  : ë¹ ë¥¸ A+B
 
 int main() {
 	int n, i, o, t;
@@ -816,7 +827,7 @@ int main() {
 
 
 
-#include<stdio.h> // 2742   : ±âÂï N
+#include<stdio.h> // 2742   : ê¸°ì° N
 
 int main() {
 	int N, i;
@@ -827,7 +838,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2480   : ÁÖ»çÀ§ ¼¼°³
+#include<stdio.h> // 2480   : ì£¼ì‚¬ìœ„ ì„¸ê°œ
 
 int main() {
 	int n1, n2, n3;
@@ -847,7 +858,7 @@ int main() {
 
 //Bronze III
 /*
-#include<stdio.h> // 10817  : ¼¼ ¼ö
+#include<stdio.h> // 10817  : ì„¸ ìˆ˜
 
 int main() {
 	int A, B, C;
@@ -858,7 +869,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 18127  : ¸ğÇü°áÁ¤
+#include<stdio.h> // 18127  : ëª¨í˜•ê²°ì •
 
 long long int jaegui(long long int A, long long int B) {
 	if (B == 0) return 1;
@@ -872,7 +883,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2441   : º° Âï±â - 4
+#include<stdio.h> // 2441   : ë³„ ì°ê¸° - 4
 
 int main() {
 	int i, j, n;
@@ -885,7 +896,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2442   : º° Âï±â - 5
+#include<stdio.h> // 2442   : ë³„ ì°ê¸° - 5
 
 int main() {
 	int i, j, n;
@@ -899,7 +910,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2443   : º° Âï±â - 6
+#include<stdio.h> // 2443   : ë³„ ì°ê¸° - 6
 
 int main() {
 	int i, j, n;
@@ -913,7 +924,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2444   : º° Âï±â - 7
+#include<stdio.h> // 2444   : ë³„ ì°ê¸° - 7
 
 int main() {
 	int i, j, n;
@@ -933,7 +944,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2445   : º° Âï±â - 8
+#include<stdio.h> // 2445   : ë³„ ì°ê¸° - 8
 
 int main() {
 	int i, j, n;
@@ -953,7 +964,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2446   : º° Âï±â - 9
+#include<stdio.h> // 2446   : ë³„ ì°ê¸° - 9
 
 int main() {
 	int i, j, n;
@@ -973,7 +984,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2884   : ¾Ë¶÷ ½Ã°è
+#include<stdio.h> // 2884   : ì•ŒëŒ ì‹œê³„
 
 int main() {
 	int h, m;
@@ -988,7 +999,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2525   : ¿Àºì ½Ã°è
+#include<stdio.h> // 2525   : ì˜¤ë¸ ì‹œê³„
 
 int main() {
 	int h, m, t;
@@ -1006,7 +1017,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10818  : ÃÖ¼Ò, ÃÖ´ë
+#include<stdio.h> // 10818  : ìµœì†Œ, ìµœëŒ€
 
 int arr[1000000] = { 0 };
 
@@ -1022,7 +1033,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2562   : ÃÖ´ñ°ª
+#include<stdio.h> // 2562   : ìµœëŒ“ê°’
 
 int main() {
 	int n[9] = { 0 }, big = 0, bindex = 0;
@@ -1057,7 +1068,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2588   : °ö¼À
+#include<stdio.h> // 2588   : ê³±ì…ˆ
 
 int main() {
 	int num1, num2, il, sib, back;
@@ -1072,7 +1083,7 @@ int main() {
 
 //Bronze II
 /*
-#include<stdio.h> // 1152   : ´Ü¾îÀÇ °³¼ö
+#include<stdio.h> // 1152   : ë‹¨ì–´ì˜ ê°œìˆ˜
 #include<string.h>
 
 char ch[1000001] = { 0 };
@@ -1086,7 +1097,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2920   : À½°è
+#include<stdio.h> // 2920   : ìŒê³„
 
 int main() {
 	int i, num;
@@ -1114,7 +1125,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2675   : ¹®ÀÚ¿­ ¹İº¹
+#include<stdio.h> // 2675   : ë¬¸ìì—´ ë°˜ë³µ
 #include<string.h>
 
 int main() {
@@ -1133,7 +1144,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 1009   : ºĞ»êÃ³¸®
+#include<stdio.h> // 1009   : ë¶„ì‚°ì²˜ë¦¬
 
 int main() {
 	int i, T, a, b, r;
@@ -1149,7 +1160,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 5576   : ÄÜÅ×½ºÆ®
+#include<stdio.h> // 5576   : ì½˜í…ŒìŠ¤íŠ¸
 
 int main() {
 	int w[10], k[10], i, j, big = 0, index = 0, add = 0;
@@ -1183,7 +1194,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 1712   : ¼ÕÀÍºĞ±âÁ¡
+#include<stdio.h> // 1712   : ì†ìµë¶„ê¸°ì 
 
 int main() {
 	int a, b, c;
@@ -1193,7 +1204,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 3052   : ³ª¸ÓÁö
+#include<stdio.h> // 3052   : ë‚˜ë¨¸ì§€
 
 int main() {
 	int n[10] = { 0 }, count = 0, num, Ccount = 0, zero = 1;
@@ -1221,7 +1232,7 @@ int main() {
 
 
 
-#include<stdio.h> // 8958   : OXÄûÁî
+#include<stdio.h> // 8958   : OXí€´ì¦ˆ
 
 int main() {
 	int n, Ocheck = 1, count, i, j;
@@ -1247,14 +1258,14 @@ int main() {
 	return 0;
 }
 
-//////////////////// 15596  : Á¤¼ö N°³ÀÇ ÇÕ
+//////////////////// 15596  : ì •ìˆ˜ Nê°œì˜ í•©
 long long sum(int* a, int n) {
 	long long ans = 0;
 	for (int i = 0; i < n; i++) ans += a[i];
 	return ans;
 }
 
-#include<stdio.h> // 2750   : ¼ö Á¤·ÄÇÏ±â
+#include<stdio.h> // 2750   : ìˆ˜ ì •ë ¬í•˜ê¸°
 
 int main() {
 	int n[1000], i, j, N, tempcount = 0;
@@ -1276,7 +1287,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10813  : °ø ¹Ù²Ù±â
+#include<stdio.h> // 10813  : ê³µ ë°”ê¾¸ê¸°
 
 int main() {
 	int N, M, i, j, n[101] = { 0 };
@@ -1293,7 +1304,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2577   : ¼ıÀÚÀÇ °³¼ö
+#include<stdio.h> // 2577   : ìˆ«ìì˜ ê°œìˆ˜
 
 int main() {
 	int A, B, C, mul = 0, n[10] = { 0 };
@@ -1307,7 +1318,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 2908   : »ó¼ö
+#include<stdio.h> // 2908   : ìƒìˆ˜
 
 int convert(int n) {
 	int one, ten, tho;
@@ -1328,7 +1339,7 @@ int main() {
 
 //Bronze I
 /*
-#include<stdio.h> // 2456   : ³ª´Â ÇĞ±ŞÈ¸ÀåÀÌ´Ù
+#include<stdio.h> // 2456   : ë‚˜ëŠ” í•™ê¸‰íšŒì¥ì´ë‹¤
 
 int main() {
 	int N, stc[3] = { 0 }, stp[3] = { 0 }, n1, n2, n3;
@@ -1346,7 +1357,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 1110   : ´õÇÏ±â »çÀÌÅ¬
+#include<stdio.h> // 1110   : ë”í•˜ê¸° ì‚¬ì´í´
 
 int main() {
 	int N, n1, n2, tmp, count = 0;
@@ -1366,7 +1377,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 1546   : Æò±Õ
+#include<stdio.h> // 1546   : í‰ê· 
 
 int main() {
 	int n[1000] = { 0 }, N, i, m = 0;
@@ -1384,7 +1395,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 4344   : Æò±ÕÀº ³Ñ°ÚÁö
+#include<stdio.h> // 4344   : í‰ê· ì€ ë„˜ê² ì§€
 
 int main() {
 	int C, N, n[1000] = { 0 }, i, j, avg = 0, count = 0;
@@ -1406,7 +1417,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 1157   : ´Ü¾î °øºÎ
+#include<stdio.h> // 1157   : ë‹¨ì–´ ê³µë¶€
 
 char word[1000001] = { 0 };
 int main() {
@@ -1432,7 +1443,7 @@ int main() {
 
 //Silver V
 /*
-#include<stdio.h> // 1475   : ¹æ ¹øÈ£
+#include<stdio.h> // 1475   : ë°© ë²ˆí˜¸
 
 int main() {
 	int n[10] = { 0 }, N, big = 0, add = 0;
@@ -1450,7 +1461,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 17478  : Àç±ÍÇÔ¼ö°¡ ¹º°¡¿ä?
+#include<stdio.h> // 17478  : ì¬ê·€í•¨ìˆ˜ê°€ ë­”ê°€ìš”?
 
 int i = 0;
 int underhamsu(int i) {
@@ -1464,7 +1475,7 @@ int answer(int i) {
 	for (int n = i - 1; n >= 0; n--) {
 		printf("\n");
 		underhamsu(n);
-		printf("¶ó°í ´äº¯ÇÏ¿´Áö.");
+		printf("ë¼ê³  ë‹µë³€í•˜ì˜€ì§€.");
 	}
 	return 1;
 }
@@ -1472,23 +1483,23 @@ int answer(int i) {
 int jaeguihamsu(int n) {
 	if (i < n) {
 		underhamsu(i);
-		printf("\"Àç±ÍÇÔ¼ö°¡ ¹º°¡¿ä?\"\n");
+		printf("\"ì¬ê·€í•¨ìˆ˜ê°€ ë­”ê°€ìš”?\"\n");
 		underhamsu(i);
-		printf("\"Àß µé¾îº¸°Ô. ¿¾³¯¿¾³¯ ÇÑ »ê ²À´ë±â¿¡ ÀÌ¼¼»ó ¸ğµç Áö½ÄÀ» Åë´ŞÇÑ ¼±ÀÎÀÌ ÀÖ¾ú¾î.\n");
+		printf("\"ì˜ ë“¤ì–´ë³´ê²Œ. ì˜›ë‚ ì˜›ë‚  í•œ ì‚° ê¼­ëŒ€ê¸°ì— ì´ì„¸ìƒ ëª¨ë“  ì§€ì‹ì„ í†µë‹¬í•œ ì„ ì¸ì´ ìˆì—ˆì–´.\n");
 		underhamsu(i);
-		printf("¸¶À» »ç¶÷µéÀº ¸ğµÎ ±× ¼±ÀÎ¿¡°Ô ¼ö¸¹Àº Áú¹®À» Çß°í, ¸ğµÎ ÁöÇı·Ó°Ô ´ë´äÇØ ÁÖ¾úÁö.\n");
+		printf("ë§ˆì„ ì‚¬ëŒë“¤ì€ ëª¨ë‘ ê·¸ ì„ ì¸ì—ê²Œ ìˆ˜ë§ì€ ì§ˆë¬¸ì„ í–ˆê³ , ëª¨ë‘ ì§€í˜œë¡­ê²Œ ëŒ€ë‹µí•´ ì£¼ì—ˆì§€.\n");
 		underhamsu(i);
-		printf("±×ÀÇ ´äÀº ´ëºÎºĞ ¿Ç¾Ò´Ù°í ÇÏ³×. ±×·±µ¥ ¾î´À ³¯, ±× ¼±ÀÎ¿¡°Ô ÇÑ ¼±ºñ°¡ Ã£¾Æ¿Í¼­ ¹°¾ú¾î.\"\n");
+		printf("ê·¸ì˜ ë‹µì€ ëŒ€ë¶€ë¶„ ì˜³ì•˜ë‹¤ê³  í•˜ë„¤. ê·¸ëŸ°ë° ì–´ëŠ ë‚ , ê·¸ ì„ ì¸ì—ê²Œ í•œ ì„ ë¹„ê°€ ì°¾ì•„ì™€ì„œ ë¬¼ì—ˆì–´.\"\n");
 		i++;
 		return jaeguihamsu(n);
 	}
 	else if (i == n) {
 		underhamsu(i);
-		printf("\"Àç±ÍÇÔ¼ö°¡ ¹º°¡¿ä?\"\n");
+		printf("\"ì¬ê·€í•¨ìˆ˜ê°€ ë­”ê°€ìš”?\"\n");
 		underhamsu(i);
-		printf("\"Àç±ÍÇÔ¼ö´Â ÀÚ±â ÀÚ½ÅÀ» È£ÃâÇÏ´Â ÇÔ¼ö¶ó³×\"\n");
+		printf("\"ì¬ê·€í•¨ìˆ˜ëŠ” ìê¸° ìì‹ ì„ í˜¸ì¶œí•˜ëŠ” í•¨ìˆ˜ë¼ë„¤\"\n");
 		underhamsu(i);
-		printf("¶ó°í ´äº¯ÇÏ¿´Áö.");
+		printf("ë¼ê³  ë‹µë³€í•˜ì˜€ì§€.");
 		answer(n);
 	}
 	return 0;
@@ -1497,14 +1508,14 @@ int jaeguihamsu(int n) {
 int main() {
 	int n;
 	scanf("%d", &n);
-	printf("¾î´À ÇÑ ÄÄÇ»ÅÍ°øÇĞ°ú ÇĞ»ıÀÌ À¯¸íÇÑ ±³¼ö´ÔÀ» Ã£¾Æ°¡ ¹°¾ú´Ù.\n");
+	printf("ì–´ëŠ í•œ ì»´í“¨í„°ê³µí•™ê³¼ í•™ìƒì´ ìœ ëª…í•œ êµìˆ˜ë‹˜ì„ ì°¾ì•„ê°€ ë¬¼ì—ˆë‹¤.\n");
 	jaeguihamsu(n);
 	return 0;
 }*/
 
 //Silver IV
 /*
-#include<stdio.h> // 10828  : ½ºÅÃ
+#include<stdio.h> // 10828  : ìŠ¤íƒ
 
 int n[10001], t = -1;
 
@@ -1550,7 +1561,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10773  : Á¦·Î
+#include<stdio.h> // 10773  : ì œë¡œ
 
 int main() {
 	int add = 0, top = -1, k, i, n[100000] = { 0 }, num;
@@ -1565,7 +1576,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 9012   : °ıÈ£
+#include<stdio.h> // 9012   : ê´„í˜¸
 
 bool check(char br[]) {
 	int top = -1;
@@ -1596,7 +1607,7 @@ int main() {
 
 //Silver III
 /*
-#include<stdio.h> // 1003   : ÇÇº¸³ªÄ¡ ÇÔ¼ö
+#include<stdio.h> // 1003   : í”¼ë³´ë‚˜ì¹˜ í•¨ìˆ˜
 
 int arr[1000];
 
@@ -1618,7 +1629,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 10799  : ¼è¸·´ë±â
+#include<stdio.h> // 10799  : ì‡ ë§‰ëŒ€ê¸°
 
 int stick = 0, num = 0, add = 0;
 
@@ -1647,7 +1658,7 @@ int main() {
 
 //Silver II
 /*
-#include<stdio.h> // 1406   : ¿¡µğÅÍ
+#include<stdio.h> // 1406   : ì—ë””í„°
 #include<string.h>
 
 int top1, top2 = -1, i;
@@ -1682,7 +1693,7 @@ int main() {
 
 //Silver I
 
-//#include<stdio.h> // 1393   : À½ÇÏÃ¶µµ ±¸±¸ÆÈ //no solve
+//#include<stdio.h> // 1393   : ìŒí•˜ì² ë„ êµ¬êµ¬íŒ” //no solve
 //#include<math.h>
 //
 //double root(double A) {
@@ -1703,7 +1714,7 @@ int main() {
 //	return 0;
 //}
 /*
-#include<stdio.h> // 1914   : ÇÏ³ëÀÌ Å¾
+#include<stdio.h> // 1914   : í•˜ë…¸ì´ íƒ‘
 #include<math.h>
 
 void hanoi(int n, int start, int mid, int end) {
@@ -1744,7 +1755,7 @@ int main() {
 
 //Gold V
 /*
-#include<stdio.h> // 2447   : º° Âï±â - 10
+#include<stdio.h> // 2447   : ë³„ ì°ê¸° - 10
 
 void Star(int N, int i, int j) {
 	if ((i / N) % 3 == 1 && (j / N) % 3 == 1) printf(" ");
@@ -1764,7 +1775,7 @@ int main() {
 	return 0;
 }
 
-#include<stdio.h> // 1019   : Ã¥ ÆäÀÌÁö (fail-time)
+#include<stdio.h> // 1019   : ì±… í˜ì´ì§€ (fail-time)
 
 int N, num[10] = { 0 }, ten = 10;
 
@@ -1795,7 +1806,7 @@ int main() {
 
 //Gold VI
 /*
-#include<stdio.h> // 9935   : ¹®ÀÚ¿­ Æø¹ß
+#include<stdio.h> // 9935   : ë¬¸ìì—´ í­ë°œ
 #include<string.h>
 
 int top1 = -1, top2 = -1;
@@ -1828,21 +1839,21 @@ int main() {
 
 //Unrated
 /*
-#include<stdio.h> // 15802  : Å¸³ë½º
+#include<stdio.h> // 15802  : íƒ€ë…¸ìŠ¤
 
 int main() {
 	printf("1");
 	return 0;
 }
 
-#include<stdio.h> // 1237   : Á¤¤»¹÷¤»
+#include<stdio.h> // 1237   : ì •ã…‹ë²…ã…‹
 
 int main() {
-	printf("¹®Á¦ÀÇ Á¤´ä");
+	printf("ë¬¸ì œì˜ ì •ë‹µ");
 	return 0;
 }*/
 
-//#include<stdio.h> // ½Ã°£ÃÊ°ú! ¾î¶»°Ô! ¼¼±×¸ÕÆ® Æ®¸®! ¹«¾ùÀÎ°¡!
+//#include<stdio.h> // ì‹œê°„ì´ˆê³¼! ì–´ë–»ê²Œ! ì„¸ê·¸ë¨¼íŠ¸ íŠ¸ë¦¬! ë¬´ì—‡ì¸ê°€!
 //
 //int small = 1000000000, n[100000], a;
 //
