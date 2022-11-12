@@ -702,6 +702,18 @@ int main() {
 
 //Bronze IV
 /*
+#include<stdio.h> // 10039  : 평균 점수
+
+int main() {
+	int i, result = 0, val;
+	for (i = 0; i < 5; i++) {
+		scanf("%d", &val);
+		result += val > 40 ? val : 40;
+	}
+	printf("%d", result / 5);
+	return 0;
+}
+
 #include<stdio.h> // 20232  : Archivist
 
 int main() {
